@@ -10,8 +10,10 @@
 
 <form action="processForm" method="GET" >
 
+
 <input type="text" name="myName" placeholder="What is your name ?" />
 <input type="submit" value="Submit"/>
+
 
 </form>
 
