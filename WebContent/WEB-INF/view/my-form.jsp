@@ -8,7 +8,7 @@
 
 <h2>Form Page</h2>
 
-<form action="processForm" method="GET" >
+<form action="uperProcessForm" method="GET" >
 
 
 <input type="text" name="myName" placeholder="What is your name ?" />
