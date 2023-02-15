@@ -27,9 +27,17 @@ public class FormPageController {
 		String newName = httpServletRequest.getParameter("myName");
 		
 		String upperName = newName.toUpperCase();
+
+		int newNumber = Integer.parseInt(httpServletRequest.getParameter("myNumber"));
 		
+		int addedNumber = newNumber+5;
+		
+		model.addAttribute("addedNumber",addedNumber);
+			
 		model.addAttribute("upperName",upperName);
 		
 		return "info";
 	}
+	
+	
 }
