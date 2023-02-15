@@ -6,7 +6,7 @@
 <h2>Main Page</h2>
 
 <div>
-<a href="showForm">My Form</a>
+<a href="form/showForm">My Form</a>
 </div>
 
 </body>

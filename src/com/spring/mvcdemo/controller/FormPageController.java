@@ -1,6 +1,5 @@
 package com.spring.mvcdemo.controller;
 
-import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -8,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
+@RequestMapping("/form")
 public class FormPageController {
 
 	
@@ -17,10 +17,10 @@ public class FormPageController {
 	}
 	
 	
-	@RequestMapping("/processForm")
+	/*@RequestMapping("/processForm")
 	public String processForm() {
 		return "info";
-	}
+	}*/
 	
 	/*@RequestMapping("uperProcessForm")
 	public String uperProcessForm(HttpServletRequest httpServletRequest, Model model) {
