@@ -1,7 +1,10 @@
 package com.spring.mvcdemo.controller;
 
+import javax.validation.Valid;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -22,7 +25,14 @@ public class UserController {
 	
 	
 	@RequestMapping("/userAdd")
-	public String userAdd(@ModelAttribute("user")User user) {
-		return "user-confirmation";
+	public String userAdd(@Valid @ModelAttribute("user")User user, BindingResult bindingResult) {
+		
+		if(bindingResult.hasErrors()) {
+			return "user-add";
+		}
+		else {
+			return "user-confirmation";
+		}
+		
 	}
 }
