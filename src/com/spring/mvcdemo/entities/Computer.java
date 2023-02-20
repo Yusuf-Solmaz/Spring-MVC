@@ -1,5 +1,7 @@
 package com.spring.mvcdemo.entities;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -10,9 +12,23 @@ public class Computer {
 	private String brand;
 	
 	private String ramCapacity;
+	
+	@Min(value = 0,message = "min is 0")
+	@Max(value = 120, message = "max is 120")
+	private String displayCardCapacity;
+
+	
 
 	public Computer() {
 		
+	}
+	
+	public String getDisplayCardCapacity() {
+		return displayCardCapacity;
+	}
+
+	public void setDisplayCardCapacity(String displayCardCapacity) {
+		this.displayCardCapacity = displayCardCapacity;
 	}
 	
 	public String getBrand() {

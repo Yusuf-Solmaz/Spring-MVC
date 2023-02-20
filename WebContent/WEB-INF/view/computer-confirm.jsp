@@ -16,7 +16,10 @@ Brand: ${computer.brand}
 Ram Capacity: ${computer.ramCapacity}
 </label>
 <br><br>
-
+<label>
+Display Card Capacity: ${computer.displayCardCapacity}
+</label>
+<br><br>
 <div>
 <a href=""> Main Page</a></div>
 

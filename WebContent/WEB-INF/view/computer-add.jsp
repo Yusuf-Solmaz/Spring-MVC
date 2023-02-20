@@ -24,10 +24,7 @@ Brand : <form:input path="brand"/>
 <form:errors path="brand" cssClass="error"/>
 <br><br>
 
-
-
-<br><br>
-Ram Capacity : <form:select path="ramCapacity">
+Ram Capacity (GB) : <form:select path="ramCapacity">
 <form:option value="4" label="4"></form:option>
 <form:option value="8" label="8"></form:option>
 <form:option value="16" label="16"></form:option>
@@ -36,6 +33,9 @@ Ram Capacity : <form:select path="ramCapacity">
 
 <br><br>
 
+Display Card Capacity (GB) : <form:input path="displayCardCapacity"/>
+<form:errors path="displayCardCapacity" cssClass="error"/>
+<br><br>
 <input type="submit" value="Submit"/>
 </form:form>
 
