@@ -12,11 +12,12 @@ public class Computer {
 	@Size(min =1,message = "is required" )
 	private String brand;
 	
-	private String ramCapacity;
+	private int ramCapacity;
 	
+	@NotNull(message = "is required")
 	@Min(value = 0,message = "min is 0")
 	@Max(value = 120, message = "max is 120")
-	private String displayCardCapacity;
+	private Integer displayCardCapacity;
 
 	@NotNull(message = "is required")
 	@Pattern(regexp = "^[a-zA-Z0-9]{11}",message = "Serial number must be 11 digits.")
@@ -28,11 +29,11 @@ public class Computer {
 		
 	}
 	
-	public String getDisplayCardCapacity() {
+	public Integer getDisplayCardCapacity() {
 		return displayCardCapacity;
 	}
 
-	public void setDisplayCardCapacity(String displayCardCapacity) {
+	public void setDisplayCardCapacity(Integer displayCardCapacity) {
 		this.displayCardCapacity = displayCardCapacity;
 	}
 	
@@ -44,11 +45,11 @@ public class Computer {
 		this.brand = brand;
 	}
 
-	public String getRamCapacity() {
+	public Integer getRamCapacity() {
 		return ramCapacity;
 	}
 
-	public void setRamCapacity(String ramCapacity) {
+	public void setRamCapacity(Integer ramCapacity) {
 		this.ramCapacity = ramCapacity;
 	}
 	
