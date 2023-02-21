@@ -3,6 +3,7 @@ package com.spring.mvcdemo.entities;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class Computer {
@@ -17,7 +18,11 @@ public class Computer {
 	@Max(value = 120, message = "max is 120")
 	private String displayCardCapacity;
 
+	@NotNull(message = "is required")
+	@Pattern(regexp = "^[a-zA-Z0-9]{11}",message = "Serial number must be 11 digits.")
+	private String serialNumber;
 	
+
 
 	public Computer() {
 		
@@ -47,5 +52,12 @@ public class Computer {
 		this.ramCapacity = ramCapacity;
 	}
 	
+	public String getSerialNumber() {
+		return serialNumber;
+	}
+
+	public void setSerialNumber(String serialNumber) {
+		this.serialNumber = serialNumber;
+	}
 	
 }

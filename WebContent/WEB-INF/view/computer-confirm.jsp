@@ -20,6 +20,10 @@ Ram Capacity: ${computer.ramCapacity}
 Display Card Capacity: ${computer.displayCardCapacity}
 </label>
 <br><br>
+<label>
+Serial Number: ${computer.serialNumber}
+</label>
+<br><br>
 <div>
 <a href=""> Main Page</a></div>
 

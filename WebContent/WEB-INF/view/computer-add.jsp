@@ -35,9 +35,16 @@ Ram Capacity (GB) : <form:select path="ramCapacity">
 
 Display Card Capacity (GB) : <form:input path="displayCardCapacity"/>
 <form:errors path="displayCardCapacity" cssClass="error"/>
+
+<br><br>
+
+Serial Number: <form:input path="serialNumber"/>
+<form:errors path="serialNumber" cssClass="error"/>
 <br><br>
 <input type="submit" value="Submit"/>
+
 </form:form>
+
 
 </div>
 
