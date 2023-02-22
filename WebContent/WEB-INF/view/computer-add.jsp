@@ -41,6 +41,9 @@ Display Card Capacity (GB) : <form:input path="displayCardCapacity"/>
 Serial Number: <form:input path="serialNumber"/>
 <form:errors path="serialNumber" cssClass="error"/>
 <br><br>
+Display Card Brand: <form:input path="displayCardBrand"/>
+<form:errors path="displayCardBrand" cssClass="error"/>
+<br><br>
 <input type="submit" value="Submit"/>
 
 </form:form>

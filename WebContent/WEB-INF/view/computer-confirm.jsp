@@ -24,6 +24,10 @@ Display Card Capacity: ${computer.displayCardCapacity}
 Serial Number: ${computer.serialNumber}
 </label>
 <br><br>
+<label>
+Display Card Brand: ${computer.displayCardBrand}
+</label>
+<br><br>
 <div>
 <a href=""> Main Page</a></div>
 

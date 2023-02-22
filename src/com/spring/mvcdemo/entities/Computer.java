@@ -6,6 +6,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
+import com.spring.mvcdemo.validation.MyValidation;
+
 public class Computer {
 
 	@NotNull(message = "is required")
@@ -24,6 +26,9 @@ public class Computer {
 	private String serialNumber;
 	
 
+	@MyValidation
+	@NotNull(message = "is required")
+	private String displayCardBrand;
 
 	public Computer() {
 		
@@ -60,5 +65,15 @@ public class Computer {
 	public void setSerialNumber(String serialNumber) {
 		this.serialNumber = serialNumber;
 	}
-	
+	public String getDisplayCardBrand() {
+		return displayCardBrand;
+	}
+
+	public void setDisplayCardBrand(String displayCardBrand) {
+		this.displayCardBrand = displayCardBrand;
+	}
+
+	public void setRamCapacity(int ramCapacity) {
+		this.ramCapacity = ramCapacity;
+	}
 }
