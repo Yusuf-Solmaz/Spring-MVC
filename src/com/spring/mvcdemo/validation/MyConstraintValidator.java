@@ -25,13 +25,15 @@ public class MyConstraintValidator implements ConstraintValidator<MyValidation, 
                 if (result) {
                     break;
                 }
-            }
-        }
+          
+        
         else {
             result = true;
         }
+                }
+            }
         
-        return result;
-  }
-
-}
+        return result;}
+	}
+  
+	
